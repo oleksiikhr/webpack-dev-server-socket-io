@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Webpack Dev Server with Socket.io</title>
+</head>
+<body>
+  <h1>Files</h1>
+  <ul>
+    <% if (isProd) { %>
+      <% files.forEach((filePath) => { %>
+        <li>
+          <div class="path"><%= filePath %></div>
+        </li>
+      <% }) %>
+    <% } %>
+  </ul>
+</body>
+</html>
